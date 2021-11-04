@@ -61,3 +61,7 @@ export const getPathIcon = (path: string) => {
                 ? 'fak fa-lexon' : path.endsWith('.contract')
                   ? 'fab fa-ethereum' : 'far fa-file'
 }
+
+export const isNumeric = (value) => {
+  return /^\+?(0|[1-9]\d*)$/.test(value)
+}
